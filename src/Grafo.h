@@ -1,7 +1,3 @@
-//
-// Created by Rafael on 28/05/2025.
-//
-
 #ifndef GRAFO_H
 #define GRAFO_H
 
@@ -35,8 +31,10 @@ public:
     bool in_ponderado_aresta;
     bool in_ponderado_vertice;
     vector<No*> lista_adj;
+
+private:
+    void dfs_fecho_transitivo(No* no, vector<bool>& visitado, vector<char>& resultado);
+    int indice_no(char id_no);
 };
-
-
 
 #endif //GRAFO_H

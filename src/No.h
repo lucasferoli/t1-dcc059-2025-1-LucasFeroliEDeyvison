@@ -1,22 +1,17 @@
 #ifndef NO_H
 #define NO_H
 
-#include <string>
 #include <vector>
-#include "Aresta.h"
 
+class Aresta;
 
-using namespace std;
 class No {
 public:
-    No();
+    No(char id);  
     ~No();
 
     char id;
-    int peso;
-    vector<Aresta*> arestas;
+    std::vector<Aresta*> arestas;  
 };
 
-
-
-#endif //NO_H
+#endif 
